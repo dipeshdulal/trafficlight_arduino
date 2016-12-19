@@ -1,0 +1,16 @@
+contains pin number matching of the traffic lights 
+based on the ascii passed to the arduino
+
+ASCII 	PIN NO
+A 		2	(R1)
+B 		3   (G1)
+C 		4	(Y1)
+D  		5	(R2)
+E 		6   (G2)
+F  		7   (Y2)
+G  		8   (R3)
+H  		9 	(G3)
+I  		10	(Y3)
+J  		11	(R4)
+K  		12 	(G4)
+L  		13	(Y4)
