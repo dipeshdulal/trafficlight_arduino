@@ -5,7 +5,7 @@ from webcam_feed import getImage
 from arduino_vehicle import carDetector
 
 # image = getImage()
-image = cv2.imread("123.png")
+image = cv2.imread("cars.png")
 
 x = carDetector(image, "cars.xml")
 
@@ -14,12 +14,12 @@ x = carDetector(image, "cars.xml")
 
 print("Number of cars: ",x)
 
-for x in range(0,20):
-	writeToArduino("abCdefghijkL")
-	time.sleep(1)
-	writeToArduino("abcDefghijkL")
-	time.sleep(1)
-	writeToArduino("abcdefghIjkL")
-	time.sleep(1)
+# for x in range(0,20):
+# 	writeToArduino("abCdefghijkL")
+# 	time.sleep(1)
+# 	writeToArduino("abcDefghijkL")
+# 	time.sleep(1)
+# 	writeToArduino("abcdefghIjkL")
+# 	time.sleep(1)
 
 

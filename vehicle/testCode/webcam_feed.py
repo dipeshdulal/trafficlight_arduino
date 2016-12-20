@@ -2,9 +2,9 @@
 import numpy as np
 import cv2
 
-def getImage():
+def getImage(camNo):
 	# 0 with video name
-	cap = cv2.VideoCapture(0)
+	cap = cv2.VideoCapture(camNo)
 
 	# Capture frame-by-frame
 	ret, frame = cap.read()
@@ -13,3 +13,4 @@ def getImage():
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
 	return gray
+
