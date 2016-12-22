@@ -7,13 +7,17 @@ cascade_src = 'cars.xml'
 video_src = 'dataset/video1.avi'
 #video_src = 'dataset/video2.avi'
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(video_src)
 # cap1 = cv2.VideoCapture(0)
 car_cascade = cv2.CascadeClassifier(cascade_src)
 
 while True:
     ret, img = cap.read()
     # ret, img1 = cap1.read()
+
+    height,width,channels = img.shape
+    print("size:")
+    print (height , width , channels)
     if (type(img) == type(None)):
         break
     

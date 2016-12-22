@@ -16,7 +16,7 @@ def defaultToggle(is_default, str = 1, transisitonTime = 1):
 		if str == 3:
 			writeToArduino("aBcdEfgHijkl")
 			time.sleep(transisitonTime)
-			writeToArduino("abCdeFGhijkl")
+			writeToArduino("AbcdeFghIjkl")
 		elif str == 2:
 			writeToArduino("aBcdEfgHijkl")
 			time.sleep(transisitonTime)
@@ -24,11 +24,11 @@ def defaultToggle(is_default, str = 1, transisitonTime = 1):
 		elif str == 1:
 			writeToArduino("aBcdEfgHijkl")
 			time.sleep(transisitonTime)
-			writeToArduino("AbcdeFghIjkl")
+			writeToArduino("abCdeFGhijkl")
 
 # while True:		
 # 	time.sleep(10)
-# 	writeToArduino("abcdefghjkl")
+# writeToArduino("ABCDEFGHIJKL")
 # 	time.sleep(10)
 
 # i = 1;

@@ -18,7 +18,7 @@ def carDetector(image, car_cascade, windowName):
 
 	gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-	cars = car_cascade.detectMultiScale(gray, 1.1, 1)
+	cars = car_cascade.detectMultiScale(gray, 1.5, 2)
 
 	a = len(cars)
 
