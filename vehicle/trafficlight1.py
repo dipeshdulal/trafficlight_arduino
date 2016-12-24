@@ -27,33 +27,15 @@ while True:
 		time.sleep(1)
 		print(car1, car2, car3)
 		
-		# 1
-		if ((car1 < 1) and (car2 < 1) and (car3 < 1)):
+		if ((car1 > car2) and (car1 > car3)):
 			defaultToggle(True, 3, 2)
-		# 2
-		elif ((car1 >= 1) and (car2 < 1) and (car3 < 1)):
-			defaultToggle(True, 3, 2)
-		# 3
-		elif ((car1 < 1) and (car2 >= 1) and (car3 < 1)):
+		elif ((car2 > car1) and (car2 > car3)):
 			defaultToggle(True, 2, 2)
-		# 4
-		elif ((car1 < 1) and (car2 < 1) and (car3 >= 1)):
+		elif ((car3 > car1) and (car3 > car2)):
 			defaultToggle(True, 1, 2)
-		# 5
-		elif ((car1 >= 1) and (car2 >= 1) and (car3 < 1)):
-			defaultToggle(True, 3, 2)
-		# 6
-		elif ((car1 >= 1) and (car2 < 1) and (car3 >= 1)):
-			defaultToggle(True, 3, 2)
-		# 7
-		elif ((car1 < 1) and (car2 >= 1) and (car3 >= 1)):
-			defaultToggle(True, 1, 2)
-		# 8
-		elif ((car1 >= 1) and (car2 >= 1) and (car3 >= 1)):
-			defaultToggle(True, 3, 2)
 		else:
-			defaultToggle(True, 2, 2)
-
+			defaultToggle(True, rand(1,3), 2)
+			
 		print("Changed")	
 		time.sleep(1)
 		previousTime = datetime.now().second
